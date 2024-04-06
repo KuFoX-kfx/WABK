@@ -15,7 +15,7 @@ echo Made By KuFoX to learn batch programming, and this is the only purpose for 
 echo IS INTENDED ONLY FOR LEARNING THE BATCH LANGUAGE, IT IS FORBIDDEN TO USE THE PROGRAM OR PARTS OF IT IN ANY OTHER WAY
 echo.
 echo Administrative permissions required. Detecting permissions...
-timeout /t 3
+timeout /t 15
 net session >nul 2>&1
 if %errorLevel% == 0 (
     cls
@@ -470,10 +470,21 @@ If "%MW5%"=="0" (
 cls
 echo By KuFoX
 echo ACTIVATING WINDOWS. CLICK 'OK' IN THE OPENS WINDOWS TO CONTINUE
+echo.
+echo First window waiting
 slmgr /skms kms.digiboy.ir
+echo First window succesful
+echo.
+echo Second window waiting
 slmgr /ipk %KEY%
+echo Second window succesful
+echo.
+echo Third window waiting
 slmgr /ato
-echo ACTIVATING SUCCESFUL
+echo Third window succesful
+echo.
+echo Activation must be done
+echo.
 echo Now a browser will open in which there will be a page if you want to support me with money
 start https://www.donationalerts.com/r/kufox
 pause
