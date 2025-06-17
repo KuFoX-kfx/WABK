@@ -485,7 +485,7 @@ echo Third window succesful
 echo.
 echo Activation must be done
 echo.
-echo Now a browser will open in which there will be a page if you want to support me with money
-start https://www.donationalerts.com/r/kufox
+echo Press Enter to exit
+echo.
 pause
 Goto Menu
